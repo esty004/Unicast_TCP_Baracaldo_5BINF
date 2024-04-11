@@ -11,7 +11,7 @@ public class MainClient {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         String r = "si";
-        Client client= new Client("LucaTadd.com","Blu");
+        Client client= new Client("Esty.com","Blu");
         client.connetti("127.0.0.1",4002);
          while(r.equals("si")){
            client.scrivi();
