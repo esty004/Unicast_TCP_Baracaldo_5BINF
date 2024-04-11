@@ -1,20 +1,24 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package unicasttcp;
+package com.mycompany.comunicazionec_s;
+
+import java.util.Scanner;
 
 /**
  *
- * @author Esty
+ * @author asuf507zu4lp054w
  */
-public class MainClient{
+public class MainClient {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner s = new Scanner(System.in);
+        String r = "si";
+        Client client= new Client("LucaTadd.com","Blu");
+        client.connetti("127.0.0.1",4002);
+         while(r.equals("si")){
+           client.scrivi();
+           client.leggi();
+           System.out.println("continuare a mandare dati?");
+           r = s.nextLine(); 
+         }
+        client.chiudi();
     }
-    
 }
