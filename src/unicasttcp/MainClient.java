@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author asuf507zu4lp054w
+ * @author esty04
  */
 public class MainClient {
 
